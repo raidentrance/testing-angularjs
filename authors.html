@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <!--ng-app is an angular js directive -->
+<html ng-app="authorApp">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="./js/lib/angular.js"></script>
+    <script src="./js/app/authors.js"></script>
+  </head>
+  <body>
+      <h1>Testing Angular js</h1>
+
+      <div>
+        <input type="text" ng-model="abc"/>
+        {{abc}} <!--Angular expression-->
+      </div>
+
+      <!--Testing angular js controllers-->
+      <div ng-controller="myController">
+          <ul>
+            <li ng-repeat="author in authors"> {{author.name}}</li>
+          </ul>
+      </div>
+  </body>
+</html>

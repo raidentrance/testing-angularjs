@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <!--ng-app is an angular js directive -->
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="./js/lib/angular.js"></script>
+  </head>
+  <body>
+    <div>
+        <button ng-click="x=x+1" ng-init="x=0">Click</button>
+        <br/>
+        Value of x is: {{x}}
+        <br/>
+        The Next sample is going to work on loss focus <br/>
+        <input ng-init="y=0" ng-blur="y=y+1" value="{{y}}"/>
+        <br/><br/>
+        <input/>
+    </div>
+  </body>
+</html>
